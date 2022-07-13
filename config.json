@@ -1,0 +1,8 @@
+{
+    "imageResize":{
+        "dimensions":{
+            "width":500,
+            "height":false
+        }
+    }
+}
