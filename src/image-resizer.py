@@ -73,8 +73,8 @@ def main():
         try:
             img = Image.open(join(imageSourceDir,file))
             width, height = calcTransformDimension(img.size,(CONFIG["imageResize"]["dimensions"]["width"],CONFIG["imageResize"]["dimensions"]["height"]))
-            img.resize((width,height))
-            img.save(join(imageOutDir,file))
+            print(width,height)
+            img.resize((width,height)).save(join(imageOutDir,file))
             transformedCount += 1
         except:
             print(f"error transforming '{file}' - skipping.")
